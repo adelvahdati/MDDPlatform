@@ -1,0 +1,33 @@
+[submodule "MDDPlatform.ModelTransformations"]
+	path = MDDPlatform.ModelTransformations
+	url = https://github.com/adelvahdati/MDDPlatform.ModelTransformations.git
+[submodule "MDDPlatform.Diagrams"]
+	path = MDDPlatform.Diagrams
+	url = https://github.com/adelvahdati/MDDPlatform.Diagrams.git
+[submodule "MDDPlatform.ProblemDomains"]
+	path = MDDPlatform.ProblemDomains
+	url = https://github.com/adelvahdati/MDDPlatform.ProblemDomains.git
+[submodule "MDDPlatform.Domains"]
+	path = MDDPlatform.Domains
+	url = https://github.com/adelvahdati/MDDPlatform.Domains.git
+[submodule "MDDPlatform.DomainModels"]
+	path = MDDPlatform.DomainModels
+	url = https://github.com/adelvahdati/MDDPlatform.DomainModels.git
+[submodule "MDDPlatform.Concepts"]
+	path = MDDPlatform.Concepts
+	url = https://github.com/adelvahdati/MDDPlatform.Concepts.git
+[submodule "MDDPlatform.BaseConcepts"]
+	path = MDDPlatform.BaseConcepts
+	url = https://github.com/adelvahdati/MDDPlatform.BaseConcepts.git
+[submodule "MDDPlatform.RestClients"]
+	path = MDDPlatform.RestClients
+	url = https://github.com/adelvahdati/MDDPlatform.RestClients.git
+[submodule "MDDPlatform.SharedKernel"]
+	path = MDDPlatform.SharedKernel
+	url = https://github.com/adelvahdati/MDDPlatform.SharedKernel.git
+[submodule "MDDPlatform.DataStorage"]
+	path = MDDPlatform.DataStorage
+	url = https://github.com/adelvahdati/MDDPlatform.DataStorage.git
+[submodule "MDDPlatform.Messages"]
+	path = MDDPlatform.Messages
+	url = https://github.com/adelvahdati/MDDPlatform.Messages.git
