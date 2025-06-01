@@ -1,0 +1,78 @@
+version: '3.7'
+
+services:
+  concepts-service:
+    image: adelvahdati/conceptservice
+    container_name: concepts-service
+    ports:
+      - 5094:80
+    networks:
+      - mddplatform
+
+  problemdomains-service:
+    image: adelvahdati/problemdomainservice
+    container_name: problemdomains-service
+    ports:
+      - 5292:80
+    networks:
+      - mddplatform
+
+  domains-service:
+    image: adelvahdati/domainservice
+    container_name: domains-service
+    ports:
+      - 5271:80
+    networks:
+      - mddplatform
+
+  domainmodels-service:
+    image: adelvahdati/domainmodelservice
+    container_name: domainmodels-service
+    ports:
+      - 5173:80
+    depends_on:
+      - concepts-service
+    networks:
+      - mddplatform
+
+  modeltransformations-service:
+    image: adelvahdati/modeltransformationservice
+    container_name: modeltransformations-service
+    ports:
+      - 5228:80
+    depends_on:
+      - domains-service
+      - domainmodels-service
+    networks:
+      - mddplatform
+
+  diagrams-service:
+    image: adelvahdati/diagramservice
+    container_name: diagrams-service
+    ports:
+      - 5047:80
+    depends_on:
+      - domainmodels-service
+    networks:
+      - mddplatform
+    
+  apiclient-service:
+    image: adelvahdati/apiclientservice
+    container_name: apiclient-service
+    ports:
+      - 6094:80
+    depends_on:
+      - concepts-service
+      - problemdomains-service
+      - domains-service
+      - domainmodels-service
+      - modeltransformations-service
+      - diagrams-service
+    networks:
+      - mddplatform
+
+networks:
+  mddplatform:
+    name: mddplatform
+    external: true
+      

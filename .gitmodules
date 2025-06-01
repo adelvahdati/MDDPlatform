@@ -31,3 +31,6 @@
 [submodule "MDDPlatform.Messages"]
 	path = MDDPlatform.Messages
 	url = https://github.com/adelvahdati/MDDPlatform.Messages.git
+[submodule "MDDPlatform.APIClient"]
+	path = MDDPlatform.APIClient
+	url = https://github.com/adelvahdati/MDDPlatform.APIClient.git
